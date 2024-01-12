@@ -90,7 +90,11 @@ document.querySelector('.infortri #informasi1').onclick = (e) =>{
   inf1.style.animation = 'animasi3 1s 1 forwards';
   e.preventDefault();
 };
-
+//ketika close item di klik
+document.querySelector('.inf1 .close-icon1').onclick = (e) =>{
+  inf1.style.display = 'none';
+  e.preventDefault();
+};
 
 // function segitiga 
 //parseFloat mengubah data yang awalnya string menjadi number(angka).
