@@ -35,11 +35,20 @@ body{
   align-items: center;
   padding: 3px 3px 5%;
 }
-.infor a{
+.infortri{
+  padding: 3px 3px 5%;
+}
+.closetri{
+  padding: 3px 3px 5%;
+}
+.infor a,
+.infortri a,
+.closetri a{
   color: #fff;
   opacity: 60%;
 }
-.infor .fatinfo{
+.fatinfo,
+.close-xtri{
   width: 15px;
   height: 15px;
 }
@@ -61,20 +70,13 @@ body{
   position: absolute;
   
 }
-/*.container1{
-  display: none;
-  background: transparent;
-  backdrop-filter: blur(1px);
-  min-width: 70%;
-  min-height: 25%;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 15px;
-  border: 0.5px solid #fff;
-  box-shadow: 0px 0px 2px 1px rgba(154, 154, 154, 1);
+.container4 .icon{
+  display: flex;
+  justify-content: space-between;
+  top: 0;
   position: absolute;
-  animation: animasi2 2s 1 ease forwards;
-}*/
+  min-width: 100%;
+}
 .container3{
   background: transparent;
   backdrop-filter: blur(1px);
@@ -218,7 +220,17 @@ body{
   position: absolute;
   backdrop-filter: blur(5px);
 }
-.inf{
+.triinf{
+  min-width: 100%;
+  min-height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backdrop-filter: blur(5px);
+}
+.inf,
+.inf1{
   background: transparent;
   display: flex;
   align-items: center;
@@ -230,7 +242,8 @@ body{
   border-radius: 15px;
 }
 .close,
-.close-info {
+.close-info,
+.close-info1{
   display: flex;
   justify-content: flex-end;
   min-width: 97%;
@@ -239,7 +252,8 @@ body{
   align-items: center;
   padding: 3px 3px 5%;
 }
-.close-info a{
+.close-info a,
+.close-info1 a{
   color: #fff;
   opacity: 50%;
 }
