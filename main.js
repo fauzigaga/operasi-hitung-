@@ -70,7 +70,7 @@ else if (
   //trigonometri.style.animation ='animasi2 1.2s 1 ease forwards';
   selhid.style.display = 'none'
 //ketika close item di klik di container
-  document.querySelector('.container4 .close-icon').onclick = (e) =>{
+  document.querySelector('.container4 .close-icontri').onclick = (e) =>{
     trigonometri.style.animation ='animasi 2s 1 ease forwards';
     trigonometri.style.display = 'none'
     container3.style.animation = 'animasi 1.2s 1 ease forwards';
@@ -82,6 +82,15 @@ else if (
   }
   
 }
+
+var inf1 = document.querySelector('#infotrii');
+  // toggle info untuk trigonometri 
+document.querySelector('.infortri #informasi1').onclick = (e) =>{
+  inf1.style.display = 'flex';
+  inf1.style.animation = 'animasi3 1s 1 forwards';
+  e.preventDefault();
+};
+
 
 // function segitiga 
 //parseFloat mengubah data yang awalnya string menjadi number(angka).
@@ -198,7 +207,7 @@ function hitungSudutIstime() {
     if (sinCosTan.trim().toLowerCase() === 'sin' || sinCosTan.trim().toLowerCase() === 'sin ') {
       hasilSdt = hitungSin(deg, kuadran);
       sudutInput.value = hasilSdt;
-     operasiTri = `tan${derajat}°=${
+     operasiTri = `sin${derajat}°=${
        //seleksi masuk kuadran berapa 
        (kuadran === 1) ? `${derajat} - 0` :
        (kuadran === 2) ?
@@ -223,7 +232,7 @@ function hitungSudutIstime() {
     } else if (sinCosTan.trim().toLowerCase() === 'cos' || sinCosTan.trim().toLowerCase() === 'cos ') {
       hasilSdt = hitungCos(deg, kuadran);
       sudutInput.value = hasilSdt;
-      operasiTri = `tan${derajat}°=${
+      operasiTri = `cos${derajat}°=${
        //seleksi masuk kuadran berapa 
           (kuadran === 1) ? `${derajat} - 0`:
           (kuadran === 2) ?
